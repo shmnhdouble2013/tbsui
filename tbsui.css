@@ -108,6 +108,7 @@ table {
     -o-transition: 0.15s;
     transition: 0.15s;
     -webkit-backface-visibility: hidden;
+    cursor: pointer;
 }
 
 .btn.btn-primary:hover,
