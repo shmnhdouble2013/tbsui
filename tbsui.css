@@ -95,6 +95,8 @@ table {
     line-height: 27px;
     text-decoration: none;
     text-shadow: none;
+    background: #b51800;
+    color: #ffffff;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -107,19 +109,30 @@ table {
     transition: 0.15s;
     -webkit-backface-visibility: hidden;
 }
-.btn.btn-primary{
-    background: #b51800;
-    color: #ffffff;
+
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.btn.btn-primary:active{
+    text-decoration: none;
+    background: #cc1b00;
 }
 .btn.btn-primary-hover{
     background: #cc1b00;
-    color: #ffffff;
 }
 .btn.btn-pale{
     color: #333333;
     border: 1px solid #999999;
-    background: #f8f8f8;
+    background: #ebebeb;
     padding: 5px 11px;
+}
+.btn.btn-pale:hover,
+.btn.btn-pale:focus,
+.btn.btn-pale:active{
+    color: #333333;
+    background: #ffffff;
+    border: 1px solid #999999;
+    padding: 5px 11px;
+    text-decoration: none;
 }
 .btn.btn-pale-hover{
     color: #333333;
@@ -127,14 +140,7 @@ table {
     border: 1px solid #999999;
     padding: 5px 11px;
 }
-.btn:hover,
-.btn:focus,
-.btn:active {
-    background-color: #a1a6a9;
-    color: rgba(255, 255, 255, 0.75);
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    text-decoration: none;
-}
 /*input*/
+.input{
+
+}
