@@ -175,4 +175,83 @@ textarea[readonly] {
 /*select*/
 .slct{
     display: none;
+    cursor: pointer;
+}
+.slct-block{
+    position: relative;
+    display: inline-block;
+    width: 160px;
+    white-space: nowrap;
+    vertical-align: middle;
+    float: none;
+    margin: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.slct-block .option{
+    background: #ffffff;
+    color: #333333;
+    overflow: hidden;
+    text-align: left;
+    cursor: pointer;
+    padding: 0 6px;
+    *float: left;
+}
+.slct-block .icon{
+    -webkit-transition: 0.15s;
+    -moz-transition: 0.15s;
+    -o-transition: 0.15s;
+    transition: 0.15s;
+    -webkit-backface-visibility: hidden;
+    width: 15px;
+    height: 22px;
+    margin-right: 1px;
+    background: url(http://img02.taobaocdn.com/tps/i2/T1IlXAFeRaXXc5CeHX-15-22.jpg) no-repeat;
+    display: block;
+    float: right;
+}
+.slct-block .menu{
+    z-index: 1000;
+    min-width: 100px;
+    color:#b51800;
+    margin: 0;
+    list-style: none;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+    padding: 0 2px;
+    display: none;
+}
+.slct-block .title{
+    height: 22px;
+    line-height: 22px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+}
+.slct-block .title:hover{
+    border: 1px solid #f5b785;
+    cursor: pointer;
+}
+.slct-block ul li {
+    padding: 0 12px;
+    cursor: pointer;
+    height: 22px;
+    line-height: 22px;
+    margin: 0;
+}
+.slct-block .selected,
+.slct-block .hover{
+    color:#ffffff;
+    background-color:#b51800;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
 }
