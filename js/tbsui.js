@@ -66,7 +66,7 @@ KISSY.add('tbsui', function (S,XTemplate) {
             E.delegate('.'+self.prifix,'click mouseenter mouseleave','li',function(e){
                 switch(e.type){
                     case 'click':
-                        self.selectOption(elm,D.attr(e.target,'data-index'));
+                        self.selectOption(elm,D.attr(e.target,'data-index'), D.get('.option', D.next(elm)));
                         D.hide(panel);
                         break;
                     case 'mouseenter':
@@ -88,8 +88,9 @@ KISSY.add('tbsui', function (S,XTemplate) {
                 }
             });
         },
-        selectOption:function(elm,index){
+        selectOption:function(elm,index,title){
             elm.options[index].selected = 'selected';
+            D.html(title,elm.options[index].text);
         }
     });
     return Tbsui;
