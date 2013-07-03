@@ -1,7 +1,7 @@
 /*
  * tbsui v1.0.0
  * author:dafeng.xdf@taobao.com
- * describe: include reset base button input
+ * describe: include reset base button input select
  * Copyright 2013 Tmall
  */
 /*reset*/
@@ -91,7 +91,7 @@ table {
 .btn {
     border: none;
     background: #b51800;
-    padding: 6px 12px;
+    padding: 6px 20px;
     line-height: 27px;
     text-decoration: none;
     text-shadow: none;
@@ -123,7 +123,7 @@ table {
     color: #333333;
     border: 1px solid #999999;
     background: #ebebeb;
-    padding: 5px 11px;
+    padding: 5px 19px;
 }
 .btn.btn-pale:hover,
 .btn.btn-pale:focus,
@@ -131,16 +131,47 @@ table {
     color: #333333;
     background: #ffffff;
     border: 1px solid #999999;
-    padding: 5px 11px;
+    padding: 5px 19px;
     text-decoration: none;
 }
 .btn.btn-pale-hover{
     color: #333333;
     background: #ffffff;
     border: 1px solid #999999;
-    padding: 5px 11px;
+    padding: 5px 19px;
 }
 /*input*/
-.input{
-
+textarea,
+input {
+    border: 1px solid #999999;
+    color: #333333;
+    height: 26px;
+    font-size: 14px;
+    text-indent: 6px;
+    line-height: 26px;
+    -webkit-appearance: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: border .25s linear, color .25s linear;
+    -moz-transition: border .25s linear, color .25s linear;
+    -o-transition: border .25s linear, color .25s linear;
+    transition: border .25s linear, color .25s linear;
+    -webkit-backface-visibility: hidden;
+}
+input[disabled],
+input[readonly],
+textarea[disabled],
+textarea[readonly] {
+    background-color: #ebebeb;
+    border-color: #cccccc;
+    color: #999999;
+    cursor: default;
+}
+/*select*/
+.slct{
+    display: none;
 }
