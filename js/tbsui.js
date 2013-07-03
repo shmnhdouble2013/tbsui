@@ -26,7 +26,11 @@ KISSY.add('tbsui', function (S) {
             var self = this;
             S.each(self.selector,function(i){
                 S.each(S.query(i),function(j){
-                    console.log(D.hasClass(j,'slct'));
+                   if (j.nodeName === 'SELECT' && D.hasClass(j,'slct')){
+                    console.log(1)
+                   }else if(j.nodeName === 'RADIO' && D.hasClass(j,'huangjia')){
+
+                   }
                 });
             });
         },
