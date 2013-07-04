@@ -571,7 +571,7 @@ li.tbsui-step-end-cur{
 
 
 .tbsui-page-wrap{
-    color: #ffffff;
+    color: #999999;
     font-size: 14px;
     font-weight: 700;
     float: right;
@@ -583,24 +583,16 @@ li.tbsui-step-end-cur{
 }
 
 .tbsui-page-wrap a {
-    color: #999999;
+    color: #cccccc;
     cursor: pointer;
     float: left;
     text-decoration: none;
 }
-
-.tbsui-page-wrap a:hover {
-    background-color: #EFEFEF;
-    text-decoration: underline;
-}
-
-/*for chrome bug by weideming*/
 .tbsui-page-num,
 .tbsui-page-skip{
     float: left;
     font-weight: normal;
 }
-/*End*/
 
 .tbsui-page-prev,
 .tbsui-page-next,
@@ -612,22 +604,30 @@ li.tbsui-step-end-cur{
     line-height: 38px;
     padding:0 14px;
 }
-
+.tbsui-page-cur{
+    color: #ffffff;
+}
 .tbsui-page-wrap a,
 .tbsui-page-prev,
 .tbsui-page-next,
 .tbsui-page-cur{
     background-color: #fff;
+    border: 1px solid #cccccc;
     border-left: 0;
+}
+
+.tbsui-page-wrap .tbsui-page-prev{
+    border-left: 1px solid #cccccc;
 }
 
 .tbsui-page-cur,
 b.tbsui-page-next,
 b.tbsui-page-prev {
-    background-color: #EFEFEF;
+    background-color: #cccccc;
 }
 
 .tbsui-page-break {
+    border-right: 1px solid #cccccc;
     padding: 0 4px;
     line-height: 40px;
     font-weight: bold;
@@ -653,9 +653,6 @@ b.tbsui-page-prev {
     margin: -2px 0 0 2px;
     vertical-align: middle;
 }
-
-
-/*ui-page-m*/
 .tbsui-page-m{
     padding: 1em 0;
     overflow: hidden;
@@ -682,9 +679,6 @@ b.tbsui-page-prev {
     line-height: 22px;
     padding: 0 8px;
 }
-
-
-/*ui-page-s*/
 .tbsui-page-s {
     height: 21px;
     overflow: hidden;
@@ -705,20 +699,21 @@ b.tbsui-page-prev {
     font-weight: bold;
     font-size: 12px;
     text-align: center;
-    background-color: #cccccc;
+    background-color: #fff;
 }
 
 .tbsui-page-s a {
     text-decoration: none;
-    color: #ffffff;
+    color: #cccccc;
 }
 
 .tbsui-page-s a:hover {
-    background-color: #efefef;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
 }
 
 .tbsui-page-s b {
-    background-color: #EFEFEF;
+    background-color: #cccccc;
 }
 
 b.tbsui-page-s-len {
@@ -726,3 +721,5 @@ b.tbsui-page-s-len {
     line-height: 20px;
     font-weight: normal;
 }
+
+
