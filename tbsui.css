@@ -196,7 +196,7 @@ textarea[readonly] {
     text-align: left;
     cursor: pointer;
     padding: 0 6px;
-    *float: left;
+    float: left;
 }
 .slct-block .icon{
     -webkit-transition: 0.15s;
