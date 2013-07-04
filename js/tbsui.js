@@ -63,13 +63,16 @@ KISSY.add('tbsui', function (S,XTemplate) {
                 },
                 render = new XTemplate(tpl).render(data);
             D.insertAfter(D.create(render),elm);
-            var panel = D.get('.menu',D.next(elm));
-            E.delegate('.'+self.selectPrifix,'click','.title',function(e){
+            var selectBlock = D.next(elm),
+                panel = D.get('.menu',selectBlock),
+                title = D.get('.title',selectBlock);
+            D.width(title, D.width(panel)+4);
+            E.delegate(selectBlock,'click','.title',function(e){
                 if(D.hasClass(e.target,'title')){
                     self.restoreOption(panel,elm);
                 }
             });
-            E.delegate('.'+self.selectPrifix,'click mouseenter mouseleave','li',function(e){
+            E.delegate(selectBlock,'click mouseenter mouseleave','li',function(e){
                 switch(e.type){
                     case 'click':
                         self.selectOption(elm,D.attr(e.target,'data-index'), D.get('.option', D.next(elm)));
@@ -83,7 +86,7 @@ KISSY.add('tbsui', function (S,XTemplate) {
                         break;
                 }
             });
-            E.delegate('.'+self.selectPrifix,'click','span',function(e){
+            E.delegate(selectBlock,'click','span',function(e){
                 if(e.target.nodeName == 'SPAN'){
                     self.restoreOption(panel,elm);
                 }

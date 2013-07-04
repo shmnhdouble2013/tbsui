@@ -210,6 +210,7 @@ textarea[readonly] {
     background: url(http://img02.taobaocdn.com/tps/i2/T1IlXAFeRaXXc5CeHX-15-22.jpg) no-repeat;
     display: block;
     float: right;
+    overflow: hidden;
 }
 .slct-block .menu{
     top:24px;
