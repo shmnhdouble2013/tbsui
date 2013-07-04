@@ -14,7 +14,7 @@ KISSY.add('tbsui', function (S,XTemplate) {
     function Tbsui(cfg) {
         var self = this;
         self.selector = cfg.selector;
-        self.prifix = 'slct-block';
+        self.selectPrifix = 'slct-block';
         self.init();
     }
 
@@ -37,7 +37,7 @@ KISSY.add('tbsui', function (S,XTemplate) {
         },
         createSelect:function(elm){
             var self = this,
-                tpl = '<div class="'+self.prifix+'">' +
+                tpl = '<div class="'+self.selectPrifix+'">' +
                 '<div class="clearfix title">' +
                 '<span class="option">{{optionName}}</span>' +
                 '<span class="icon"></span>' +
@@ -64,12 +64,12 @@ KISSY.add('tbsui', function (S,XTemplate) {
                 render = new XTemplate(tpl).render(data);
             D.insertAfter(D.create(render),elm);
             var panel = D.get('.menu',D.next(elm));
-            E.delegate('.'+self.prifix,'click','.title',function(e){
+            E.delegate('.'+self.selectPrifix,'click','.title',function(e){
                 if(D.hasClass(e.target,'title')){
                     self.restoreOption(panel,elm);
                 }
             });
-            E.delegate('.'+self.prifix,'click mouseenter mouseleave','li',function(e){
+            E.delegate('.'+self.selectPrifix,'click mouseenter mouseleave','li',function(e){
                 switch(e.type){
                     case 'click':
                         self.selectOption(elm,D.attr(e.target,'data-index'), D.get('.option', D.next(elm)));
@@ -83,7 +83,7 @@ KISSY.add('tbsui', function (S,XTemplate) {
                         break;
                 }
             });
-            E.delegate('.'+self.prifix,'click','span',function(e){
+            E.delegate('.'+self.selectPrifix,'click','span',function(e){
                 if(e.target.nodeName == 'SPAN'){
                     self.restoreOption(panel,elm);
                 }
