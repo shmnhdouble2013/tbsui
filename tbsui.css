@@ -247,7 +247,6 @@ textarea[readonly] {
     padding: 0 2px;
     display: none;
     position: absolute;
-    z-index: 99999;
 }
 .slct-block .title{
     height: 22px;

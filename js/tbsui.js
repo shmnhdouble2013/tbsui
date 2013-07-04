@@ -26,18 +26,20 @@ KISSY.add('tbsui', function (S,XTemplate) {
         detecte:function(){
             var self = this;
             S.each(self.selector,function(i){
-                S.each(S.query(i),function(j){
+                S.each(S.query(i),function(j,_key){
                    if (j.nodeName === 'SELECT' && D.hasClass(j,'slct')){
-                       self.createSelect(j);
+                       self.createSelect(j,_key);
                    }else if(j.nodeName === 'RADIO' && D.hasClass(j,'huangjia')){
 
                    }
                 });
             });
         },
-        createSelect:function(elm){
+        createSelect:function(elm,indexKey){
+            var _num = 100;
+                _num -=indexKey;
             var self = this,
-                tpl = '<div class="'+self.selectPrifix+'">' +
+                tpl = '<div class="'+self.selectPrifix+'" style="z-index:1'+_num+'0;">' +
                 '<div class="clearfix title">' +
                 '<span class="option">{{optionName}}</span>' +
                 '<span class="icon"></span>' +
