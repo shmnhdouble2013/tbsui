@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="utf-8" />
     <title>TBS-UI</title>
@@ -72,15 +72,16 @@
             <div class="tbsui-page-m">
                 <div class="tbsui-page-wrap">
                     <div class="tbsui-page-num">
-                        <b class="tbsui-page-prev">&lt;</b>
-                        <b class="tbsui-page-cur">1</b><a href="#">2</a>
-                        <b class="tbsui-page-break">...</b>
+                        <a href="#" class="tbsui-page-prev">&lt;</a>
+                        <a href="#" >1</a>
+                        <a href="#" class="tbsui-page-cur" href="#">2</a>
+                        <a href="#" class="tbsui-page-break">...</a>
                         <a href="#" class="tbsui-page-next">&gt;</a>
                     </div>
-                    <div class="tbsui-page-skip">
+                    <div class="tbsui-page-skip" >
                         <form id="" name="" method="get" action="">
                             共100页，去第<input type="text" name="jumpto" class="tbsui-page-skipTo" size="3" value="1">页
-                            <button type="submit" class=" tbsui-page-skipBtn">确定</button>
+                            <a class="btn btn-submit">确定</a>
                         </form>
                     </div>
                 </div>
@@ -90,9 +91,60 @@
         <li>
             <p class="tbsui-page-s">
                 <b class="tbsui-page-s-len">1/59</b>
-                <b class="tbsui-page-s-prev" title="上一页">&lt;</b>
-                <a class="tbsui-page-s-next" href="" title="下一页">&gt;</a>
+                <a class="tbsui-page-s-prev" href="javascript:void(0)" title="上一页">&lt;</a>
+                <a class="tbsui-page-s-next" href="javascript:void(0)" title="下一页">&gt;</a>
             </p>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            TABLE
+        </li>
+        <li>
+            <table class="tbsui-simtable" style="width: 100%;">
+                <thead>
+                <tr>
+                    <th>产品名称</th>
+                    <th>
+                        产品类型
+                    </th>
+                    <th>
+                        发布日期
+                    </th>
+                    <th>审核状态</th>
+                    <th> 操作</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>
+                        表格单元1
+                    </td>
+                    <td>xxxx</td>
+                    <td>2012-07-03</td>
+                    <td>
+                        xxxx
+                    </td>
+                    <td>
+                        xxxx
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        表格单元2
+                    </td>
+                    <td>xxxx</td>
+                    <td>2012-07-03</td>
+                    <td>
+                        xxxx
+                    </td>
+                    <td>
+                        xxxxx
+                    </td>
+                </tr>
+                </tbody>
+            </table>
         </li>
     </ul>
 </div>
