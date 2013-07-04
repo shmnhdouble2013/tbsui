@@ -561,3 +561,168 @@ li.tbsui-step-end-cur{
     height: 12px;
     background:url(http://img03.taobaocdn.com/tps/i3/T1CDHHXelnXXXtIkza-22-12.png) no-repeat 0px 0px;
 }
+/*page*/
+
+.tbsui-page{
+    padding: 1em 0;
+    overflow: hidden;
+    clear: both;
+}
+
+
+.tbsui-page-wrap{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    float: right;
+}
+
+.tbsui-page-wrap b {
+    font-weight: 100;
+    float: left;
+}
+
+.tbsui-page-wrap a {
+    color: #999999;
+    cursor: pointer;
+    float: left;
+    text-decoration: none;
+}
+
+.tbsui-page-wrap a:hover {
+    background-color: #EFEFEF;
+    text-decoration: underline;
+}
+
+/*for chrome bug by weideming*/
+.tbsui-page-num,
+.tbsui-page-skip{
+    float: left;
+    font-weight: normal;
+}
+/*End*/
+
+.tbsui-page-prev,
+.tbsui-page-next,
+.tbsui-page-wrap a,
+.tbsui-page-cur,
+.tbsui-page-skip {
+    height: 38px;
+    width: auto;
+    line-height: 38px;
+    padding:0 14px;
+}
+
+.tbsui-page-wrap a,
+.tbsui-page-prev,
+.tbsui-page-next,
+.tbsui-page-cur{
+    background-color: #fff;
+    border-left: 0;
+}
+
+.tbsui-page-cur,
+b.tbsui-page-next,
+b.tbsui-page-prev {
+    background-color: #EFEFEF;
+}
+
+.tbsui-page-break {
+    padding: 0 4px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.tbsui-page-skip{
+    padding: 0 1em;
+    _padding-top:10px;
+}
+.tbsui-page-skipTo {
+    width: 32px;
+    height: 18px;
+    margin: -2px 2px 0;
+    line-height: 20px;
+    font-size: 16px;
+    color: #999;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+}
+
+.tbsui-page-skipBtn {
+    margin: -2px 0 0 2px;
+    vertical-align: middle;
+}
+
+
+/*ui-page-m*/
+.tbsui-page-m{
+    padding: 1em 0;
+    overflow: hidden;
+    clear: both;
+}
+.tbsui-page-m .tbsui-page-wrap,
+.tbsui-page-m .tbsui-page-skipTo{
+    font-size: 12px;
+}
+
+.tbsui-page-m .tbsui-page-break {
+    line-height: 24px;
+}
+.tbsui-page-m .tbsui-page-skipTo,
+.tbsui-page-m .tbsui-page-skipBtn{
+    margin-top: 0;
+}
+.tbsui-page-m .tbsui-page-prev,
+.tbsui-page-m .tbsui-page-next,
+.tbsui-page-m .tbsui-page-wrap a,
+.tbsui-page-m .tbsui-page-cur,
+.tbsui-page-m .tbsui-page-skip {
+    height: 22px;
+    line-height: 22px;
+    padding: 0 8px;
+}
+
+
+/*ui-page-s*/
+.tbsui-page-s {
+    height: 21px;
+    overflow: hidden;
+    color: #999;
+    font-size: 12px;
+}
+
+.tbsui-page-s-len, .tbsui-page-s-prev, .tbsui-page-s-next {
+    float: left;
+    display: inline;
+    margin-left: 3px;
+}
+
+.tbsui-page-s-prev, .tbsui-page-s-next {
+    width: 19px;
+    padding: 4px 0 2px;
+    line-height: 1;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    background-color: #cccccc;
+}
+
+.tbsui-page-s a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.tbsui-page-s a:hover {
+    background-color: #efefef;
+}
+
+.tbsui-page-s b {
+    background-color: #EFEFEF;
+}
+
+b.tbsui-page-s-len {
+    background: none;
+    line-height: 20px;
+    font-weight: normal;
+}
