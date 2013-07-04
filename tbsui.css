@@ -256,4 +256,303 @@ textarea[readonly] {
     border-radius: 3px;
 }
 /*step*/
+.tbsui-step-bar{
+    font-size:14px;
+    line-height: 23px;
+    color:#333333;
+    width:100%;
+    *zoom: 1;
+}
+.tbsui-step-bar:after,.tbsui-step-sh-bar:after{
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both;
+}
+.tbsui-step-bar li{
+    float:left;
+    padding: 0 0 0 0;
+    text-align: center;
+    background-color:#ebebeb;
+    position:relative;
+    height:23px;
+    text-indent:-15px;
+    z-index:1;
+    *zoom:1;
+}
+li.tbsui-step-start,li.tbsui-step-start-cur,li.tbsui-step-start-done,li.tbsui-step-end,li.tbsui-step-end-cur,.tbsui-step-bar li i{
+    background-image:url("http://img04.taobaocdn.com/tps/i4/T1wBFBFlxaXXXVYvLb-15-188.png");
+    background-repeat:no-repeat;
+}
+.tbsui-step-bar li i{
+    display:block;
+    width:15px;
+    height:23px;
+    position:absolute;
+    top:0;
+    left:-15px;
+    background-position:0 0;
+    z-index:2;
+}
+li.tbsui-step-start{
+    background-position:-12px -69px;
+}
+li.tbsui-step-start-cur{
+    background-position:-12px -92px;
+}
+li.tbsui-step-start-done{
+    background-position:-12px -115px;
+}
 
+li.tbsui-step-start-cur,li.tbsui-step-cur,li.tbsui-step-end-cur{
+    background-color:#b51800;
+    color:#fff;
+}
+li.tbsui-step-cur i,li.tbsui-step-end-cur i{
+    background-position:0 -23px;
+}
+li.tbsui-step-start-done,li.tbsui-step-done{
+    background-color:#ebebeb;
+}
+li.tbsui-step-done i{
+    background-position:0 -46px;
+}
+li.tbsui-step-end{
+    background-position:right -138px;
+}
+li.tbsui-step-end-cur{
+    background-position:right -161px;
+}
+
+.tbsui-step-2 li{
+    width:50%;
+}
+.tbsui-step-3 li{
+    width:33.33%;
+}
+.tbsui-step-4 li{
+    width:25%;
+    *width:24.9%;
+}
+.tbsui-step-5 li{
+    width:20%;
+}
+.tbsui-step-6 li{
+    width:16.66%;
+}
+.tbsui-step-7 li{
+    width:14.26%;
+}
+.tbsui-shstep-bar li,
+.tbsui-shstep-bar .tbsui-shstep-start-done .tbsui-shstep-status,
+.tbsui-sh-step .tbsui-shstep-start-done .tbsui-shstep-status {
+    background:url(http://img02.taobaocdn.com/tps/i2/T1iAbIXopiXXaa.SvG-34-531.png) 0 0 no-repeat;
+}
+.tbsui-sh-step,
+.tbsui-shstep-2,
+.tbsui-shstep-3,
+.tbsui-shstep-4,
+.tbsui-shstep-5 {
+    background:#f7f8f8;
+    padding:100px 80px;
+}
+.tbsui-shstep-bar {
+    height:10px;
+    background-color:#dcdcdc;
+    _overflow:hidden;
+}
+.tbsui-shstep-bar li {
+    float:left;
+    position:relative;
+    height:34px;
+    margin-top:-12px;
+    width:100%;
+}
+.tbsui-shstep-bar .tbsui-shstep-start,
+.tbsui-shstep-bar .tbsui-shstep-start-error,
+.tbsui-shstep-bar .tbsui-shstep-start-done {
+    margin-left:0;
+}
+.tbsui-shstep-bar .tbsui-shstep-start-cur .tbsui-shstep-name,
+.tbsui-shstep-bar .tbsui-shstep-end-cur .tbsui-shstep-name,
+.tbsui-shstep-bar .tbsui-shstep-cur .tbsui-shstep-name{
+    color:#008240;
+}
+.tbsui-shstep-bar .tbsui-shstep-start-error .tbsui-shstep-name,
+.tbsui-shstep-bar .tbsui-shstep-error .tbsui-shstep-name,
+.tbsui-shstep-bar .tbsui-shstep-end-error .tbsui-shstep-name
+{
+    color:#c20000;
+}
+.tbsui-shstep-bar .tbsui-shstep-error,
+.tbsui-shstep-bar .tbsui-shstep-start-error{
+    font-weight:700;
+    color:#9b0001;
+    background-position:0 -391px;
+}
+.tbsui-shstep-bar .tbsui-shstep-end-error {
+    font-weight:700;
+    background-position:0 -426px;
+}
+.tbsui-shstep-bar .tbsui-shstep-name {
+    position:relative;
+    float:left;
+    top:-30px;
+    margin-top:-30px;
+    white-space:currap;
+    font-size: 12px;
+    color:#888888;
+}
+.tbsui-shstep-bar .tbsui-shstep-no {
+    display:block;
+    width:34px;
+    height:34px;
+    line-height:34px;
+    text-align:center;
+    color:#fff;
+    font-size:16px;
+    position:relative;
+    z-index:2;
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+.tbsui-shstep-bar .tbsui-shstep-done{
+    background-position:0 -321px;
+}
+.tbsui-shstep-bar .tbsui-shstep-cur {
+    background-position:0 -286px;
+}
+.tbsui-shstep-bar .tbsui-shstep-end-cur {
+    background-position:0 -175px;
+}
+.tbsui-shstep-bar .tbsui-shstep-start-cur {
+    background-position:0 -496px;
+}
+.tbsui-shstep-bar .tbsui-shstep-end-undone {
+    background-position:0 -140px;
+}
+.tbsui-shstep-bar .tbsui-shstep-end-done {
+    background-position:0 -356px;
+}
+.tbsui-shstep-bar .tbsui-shstep-start-error {
+    background-position:0 -461px;
+}
+.tbsui-shstep-bar .tbsui-shstep-start-done {
+    background-position:0 -105px;
+}
+.tbsui-shstep-bar .tbsui-shstep-done .tbsui-shstep-status,
+.tbsui-shstep-bar .tbsui-shstep-start-done .tbsui-shstep-status{
+    display:block;
+    height:4px;
+    background-color:#009150;
+    margin-top:-19px;
+    font-size:0;
+    overflow:hidden;
+}
+.tbsui-shstep-bar .tbsui-shstep-start-cur .tbsui-shstep-status,
+.tbsui-sh-step .tbsui-shstep-start-done .tbsui-shstep-status,
+.tbsui-shstep-bar .tbsui-shstep-start-done .tbsui-shstep-status,
+.tbsui-shstep-bar .tbsui-shstep-start-error .tbsui-shstep-status{
+    padding-right:17px;
+    margin-left:30px;
+    background-position:right -210px;
+}
+.tbsui-shstep-bar .tbsui-shstep-done .tbsui-shstep-status,
+.tbsui-shstep-bar .tbsui-shstep-start-done .tbsui-shstep-status {
+    margin-left:30px;
+    width:auto;
+    padding:0;
+}
+.tbsui-shstep-bar .tbsui-shstep-start-cur .tbsui-shstep-status,
+.tbsui-shstep-bar .tbsui-shstep-start-error .tbsui-shstep-status,
+.tbsui-shstep-bar .tbsui-shstep-start-done .tbsui-shstep-status {
+    margin-left:28px;
+    padding-right:12px;
+}
+.tbsui-shstep-bar .tbsui-shstep-end-cur .tbsui-shstep-status,
+.tbsui-shstep-bar .tbsui-shstep-end-undone .tbsui-shstep-status,
+.tbsui-shstep-bar .tbsui-shstep-end-done .tbsui-shstep-status,
+.tbsui-shstep-bar .tbsui-shstep-end-error .tbsui-shstep-status {
+    margin-right:5px;
+    padding:0;
+}
+.tbsui-shstep-2 .tbsui-shstep-start-done .tbsui-shstep-status,
+.tbsui-shstep-2 .tbsui-shstep-start-cur .tbsui-shstep-status,
+.tbsui-shstep-2 .tbsui-shstep-start-error .tbsui-shstep-status
+{
+    padding:0;
+}
+.tbsui-shstep-2 li {
+    width:100%;
+    margin-right:-34px;
+}
+.tbsui-shstep-3 li {
+    width:49.99%;
+    margin-left:-17px;
+}
+.tbsui-shstep-4 li {
+    width:33.33%;
+    margin-left:-12px;
+}
+.tbsui-shstep-5 li {
+    width:25%;
+    margin-left:-9px;
+}
+.tbsui-shstep-4 .tbsui-shstep-start-done,
+.tbsui-shstep-5 .tbsui-shstep-start-done {
+    padding-left:1px;
+}
+.tbsui-shstep-bar .tbsui-shstep-end-cur,
+.tbsui-shstep-bar .tbsui-shstep-end-undone,
+.tbsui-shstep-bar .tbsui-shstep-end-done,
+.tbsui-shstep-bar .tbsui-shstep-end-error{
+    width:34px;
+    margin-left:-34px;
+    margin-right:0;
+    float:right;
+}
+.tbsui-shstep-bar .tbsui-shstep-end-cur .tbsui-shstep-name,
+.tbsui-shstep-bar .tbsui-shstep-end-undone .tbsui-shstep-name,
+.tbsui-shstep-bar .tbsui-shstep-end-done .tbsui-shstep-name,
+.tbsui-shstep-bar .tbsui-shstep-end-error .tbsui-shstep-name{
+    _position:absolute;
+    _margin:0;
+}
+.tbsui-shstep-bar .tbsui-shstep-end-cur .tbsui-shstep-status,
+.tbsui-shstep-bar .tbsui-shstep-end-error .tbsui-shstep-status,
+.tbsui-shstep-bar .tbsui-shstep-end-undone .tbsui-shstep-status,
+.tbsui-shstep-bar .tbsui-shstep-end-done .tbsui-shstep-status {
+    _position:absolute;
+    padding-left:5px;
+}
+.tbsui-shstep-panel {
+    position: absolute;
+    margin-top: 8px;
+    left: -22px;
+    text-align: center;
+    color:#cbc8c1;
+    font-weight: 300;
+    font-size: 12px;
+    width: 80px;
+}
+.tbsui-shstep-bar .tbsui-shstep-pop{
+    position: absolute;
+    width: 180px;
+    height: 80px;
+    border: 1px #cbc8c1 solid;
+    border-right: 2px #cbc8c1 solid;
+    border-bottom: 2px #cbc8c1 solid;
+    margin-left: -50px;
+    margin-top: 4px;
+    background: #ffffff;
+    text-align: left;
+    padding-left:1px;
+    color:#666666;
+}
+.tbsui-shstep-bar .tbsui-shstep-arrow{
+    position: absolute;
+    margin-top: -12px;
+    margin-left: 77px;
+    width: 22px;
+    height: 12px;
+    background:url(http://img03.taobaocdn.com/tps/i3/T1CDHHXelnXXXtIkza-22-12.png) no-repeat 0px 0px;
+}
