@@ -87,6 +87,12 @@ table {
 .inblock{
     *display: inline;
 }
+.hidd-el{
+    display: none!important;
+}
+.show-el{
+    display: block!important;
+}
 /*buttons*/
 .btn {
     border: none;
@@ -766,6 +772,71 @@ b.tbsui-page-s-len {
 .tbsui-simtable tr{
     border-bottom: 1px solid #ebebeb;
     color: #333333;
+}
+/* radio by huangj */
+label.radoBox-label{
+    display: inline-block;
+    height:15px;
+    line-height: 15px;
+}
+input.radoBox-cls{
+    border: none;
+    height: auto;
+}
+
+.radoBox-icons, .radio-checked, .radio-unchecked,
+.raido-disabled-checked, .raido-disabled-unchecked,
+.checkbox-checked, .checkbox-unchecked,
+.checkbox-disabled-checked, .checkbox-disabled-unchecked{
+    background:url('http://img03.taobaocdn.com/tps/i3/T1rv0nFb4hXXX8LVw8-120-75.png') no-repeat 0 0;
+}
+/* 只有添加选中状态才会显示 自定义图标 */
+.radio-checked, .radio-unchecked,
+.raido-disabled-checked, .raido-disabled-unchecked,
+.checkbox-checked, .checkbox-unchecked,
+.checkbox-disabled-checked, .checkbox-disabled-unchecked{
+    display: inline-block;
+}
+span.radoBox-icons{
+    width: 16px;
+    height:100%;
+}
+
+/* radio 选中 未选中 */
+.radio-checked{
+    background-position: 0 -43px;
+}
+.radio-unchecked{
+    background-position: -28px -43px;
+}
+.raido-disabled-checked{
+    background-position: -56px -43px;
+}
+.raido-disabled-unchecked{
+    background-position: -85px -43px;
+}
+
+/* checkbox */
+.checkbox-checked{
+    background-position: 0 -23px;
+}
+.checkbox-unchecked{
+    background-position: -28px -23px;
+}
+.checkbox-disabled-checked{
+    background-position: -56px -23px;
+}
+.checkbox-disabled-unchecked{
+    background-position: -85px -23px;
+}
+/*鼠标手势*/
+label, select, button, input[type="button"],
+input[type="reset"], input[type="submit"],
+input[type="radio"], input[type="checkbox"]{
+    cursor: pointer;
+}
+.cursor-disabled, .cursor-disabled .radoBox-icons{
+    cursor: default;
 }
 
 
