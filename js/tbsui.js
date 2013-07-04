@@ -5,7 +5,7 @@
  */
 KISSY.add('tbsui', function (S,XTemplate) {
     'use strict';
-    var D = S.DOM,E = S.Event;
+    var D = S.DOM,E = S.Event,EMPTY = '';
     /**
      * @name Tbsui
      * @class 模拟控件扁平化
@@ -42,16 +42,20 @@ KISSY.add('tbsui', function (S,XTemplate) {
                 '<span class="option">{{optionName}}</span>' +
                 '<span class="icon"></span>' +
                 '</div>' +
-                '<ul class="menu">{{#each options}}' +
-                '<li data-index="{{xindex}}" class="">' +
-                '{{this}}' +
-                '</li>{{/each}}'+
+                '<ul class="menu">{{#options}}' +
+                '<li data-index="{{index}}" class="{{selected}}">' +
+                '{{text}}' +
+                '</li>{{/options}}'+
                 '</ul></div>',
                 _options = [],
                 selectedOption = 0;
             S.each(elm.options,function(i,key){
-                i.selected && (selectedOption = key);
-                _options.push(i.text);
+                var _selected = EMPTY;
+                if(i.selected){
+                    _selected = 'selected';
+                    selectedOption = key;
+                }
+                _options.push({index:key,text:i.text,selected:_selected});
             });
             var data = {
                     optionName: elm.options[selectedOption].text,
@@ -60,8 +64,12 @@ KISSY.add('tbsui', function (S,XTemplate) {
                 render = new XTemplate(tpl).render(data);
             D.insertAfter(D.create(render),elm);
             var panel = D.get('.menu',D.next(elm));
-            E.delegate('.'+self.prifix,'click','div',function(e){
+            E.delegate('.'+self.prifix,'click','.title',function(e){
                 if(D.hasClass(e.target,'title')){
+                    S.each(D.query('li',panel),function(i){
+                        D.removeClass(i,'selected');
+                    });
+                    D.addClass(D.query('li',panel)[elm.options.selectedIndex],'selected');
                     D.toggle(panel);
                 }
             });
