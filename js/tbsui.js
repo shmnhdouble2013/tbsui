@@ -47,12 +47,14 @@ KISSY.add('tbsui', function (S,XTemplate) {
                 '{{this}}' +
                 '</li>{{/each}}'+
                 '</ul></div>',
-                _options = [];
-            S.each(elm.options,function(i){
+                _options = [],
+                selectedOption = 0;
+            S.each(elm.options,function(i,key){
+                i.selected && (selectedOption = key);
                 _options.push(i.text);
             });
             var data = {
-                    optionName: D.attr(elm,'data-name'),
+                    optionName: elm.options[selectedOption].text,
                     options: _options
                 },
                 render = new XTemplate(tpl).render(data);
