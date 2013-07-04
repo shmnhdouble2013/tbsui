@@ -66,11 +66,7 @@ KISSY.add('tbsui', function (S,XTemplate) {
             var panel = D.get('.menu',D.next(elm));
             E.delegate('.'+self.prifix,'click','.title',function(e){
                 if(D.hasClass(e.target,'title')){
-                    S.each(D.query('li',panel),function(i){
-                        D.removeClass(i,'selected');
-                    });
-                    D.addClass(D.query('li',panel)[elm.options.selectedIndex],'selected');
-                    D.toggle(panel);
+                    self.restoreOption(panel,elm);
                 }
             });
             E.delegate('.'+self.prifix,'click mouseenter mouseleave','li',function(e){
@@ -89,7 +85,7 @@ KISSY.add('tbsui', function (S,XTemplate) {
             });
             E.delegate('.'+self.prifix,'click','span',function(e){
                 if(e.target.nodeName == 'SPAN'){
-                    D.toggle(panel);
+                    self.restoreOption(panel,elm);
                 }
             });
             E.delegate(document,'click','div',function(e){
@@ -97,6 +93,13 @@ KISSY.add('tbsui', function (S,XTemplate) {
                     D.hide(panel);
                 }
             });
+        },
+        restoreOption:function(panel,elm){
+            S.each(D.query('li',panel),function(i){
+                D.removeClass(i,'selected');
+            });
+            D.addClass(D.query('li',panel)[elm.options.selectedIndex],'selected');
+            D.toggle(panel);
         },
         selectOption:function(elm,index,title){
             elm.options[index].selected = 'selected';
