@@ -607,7 +607,6 @@ li.tbsui-step-end-cur{
 .tbsui-page-wrap a {
     color: #cccccc;
     cursor: pointer;
-    float: left;
     text-decoration: none;
 }
 .tbsui-page-num,
@@ -676,6 +675,9 @@ a.tbsui-page-prev {
     overflow: hidden;
     clear: both;
 }
+.tbsui-page-wrap{
+    width:340px;
+}
 .tbsui-page-m .tbsui-page-wrap,
 .tbsui-page-m .tbsui-page-skipTo{
     font-size: 12px;
@@ -700,6 +702,9 @@ a.tbsui-page-prev {
 a.tbsui-page-cur{
     background-color: #ffffff;
     color: #cccccc;
+}
+.tbsui-page-num {
+    width:150px;
 }
 .tbsui-page-num a {
 
