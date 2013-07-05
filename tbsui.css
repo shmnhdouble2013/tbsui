@@ -601,7 +601,7 @@ li.tbsui-step-end-cur{
 
 .tbsui-page-wrap a {
     font-weight: 100;
-    float: left;
+    /* float: left; */ 
 }
 
 .tbsui-page-wrap a {
@@ -625,11 +625,15 @@ li.tbsui-step-end-cur{
     line-height: 38px;
     padding:0 14px;
 }
+
+.tbsui-page-skip{
+
+}
 .tbsui-page-wrap a,
 .tbsui-page-prev{
     background-color: #cccccc;
     border: 1px solid #cccccc;
-    border-left: 0;
+    /* border-left: 0; */
     color: #ffffff;
 }
 .tbsui-page-next{
@@ -645,7 +649,7 @@ a.tbsui-page-prev {
     background-color: #cccccc;
 }
 .tbsui-page-break {
-    border-right: 1px solid #cccccc;
+   /*  border-right: 1px solid #cccccc; */
     padding: 0 4px;
     line-height: 40px;
     font-weight: bold;
@@ -668,7 +672,7 @@ a.tbsui-page-prev {
 }
 
 .tbsui-page-skipBtn {
-
+    padding: 0 5px 0 0;
 }
 .tbsui-page-m{
     padding: 1em 0;
